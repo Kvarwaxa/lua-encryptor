@@ -1,28 +1,20 @@
-# Lua Encryptor by kvarwaxa
+# 🔐 Lua Encryptor
+A lightweight tool to encrypt and obfuscate your Lua scripts — built for simplicity and speed.
 
-A simple GUI application to encrypt (obfuscate) Lua code by reversing and base64 encoding it, then wrapping it in a Lua decoder script.
+## 🧠 Features
+🔄 Multiple encryption methods:
+XOR: Encrypt your code using a password/key.
+Caesar Cipher: Shift letters by 3 positions (old-school but fun).
+Old Method (Base64): Classic Base64 encoding/decoding.
+🧩 Decrypt support – Works both ways.
+📂 Open & Save Lua files.
+💬 Info panel explaining how each encryption works.
+🎨 Clean UI with dark tones and colored output for easy reading.
+🐍 Built with Python & Tkinter – no bloat, just works.
 
----
-
-## Features
-
-- Load and save Lua files easily
-- Syntax highlighting for Lua keywords in input
-- Encrypt Lua code with a single click
-- Copy encrypted output to clipboard
-- Responsive UI with progress indicator
-
----
-
-## Requirements
-
-- Python 3.x
-- Tkinter (usually included with Python)
-- No external dependencies
-
----
-
-## How to Run
-
-1. Clone or download this repository.
-2. Run the script:
+## Encryption Method Descriptions
+| Method         | Description                                                                    |
+| -------------- | ------------------------------------------------------------------------------ |
+| **XOR**        | Applies XOR logic between your code and a password key. Simple but effective.  |
+| **Caesar**     | Shifts letters by 3 in the alphabet. super light obfuscation.                  |
+| **Old Method** | Base64 encodes the Lua code. Reversible and fast, but not secure.              |
